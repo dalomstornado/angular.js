@@ -200,7 +200,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
     transclude: 'element',
     priority: 1000,
     terminal: true,
-    $$tlb: true,
+    $$tlb: true ,
     link: function($scope, $element, $attr, ctrl, $transclude){
         var expression = $attr.ngRepeat;
         var match = expression.match(/^\s*(.+)\s+in\s+(.*?)\s*(\s+track\s+by\s+(.+)\s*)?$/),
